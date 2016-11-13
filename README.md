@@ -21,7 +21,7 @@ This repository is setup into two branches:
 - [ ] Read data from Firebase
 - [ ] Setup UI to allow user to map **events** to **key presses**
 - [x] Submit **key press** data to browser
-- [ ] Implement users functionality
+- [x] Implement users functionality
 - [ ] Upload to Google Chrome App Store
 
 ##### House Keeping
@@ -44,3 +44,6 @@ It's 12:30 and we just had insomnia cookies. Aditya realized that we cannot capt
 
 :clock330:
 Alright, it's 3:30am. I am in dire need of coffee, but I am very happy man. For the last two and half hours, I struggled with the chrome input API until I stumbled upon the glory that is the debugger. I've also learned a lot about content and background scripts. I'm starting to see why people like chrome extensions, but it definitely look a lot of existential and morally questioning moments to get here. Aditya finished his part more or less and went back to catch some sleep. I should probably follow suit, but I might just stay here and work on my website after I finished the extension. Shameless plug: [http://binitshah.com](http://binitshah.com). Hopefully by the time you see this, I'll have added a chat bot on the main page. It's pretty cool. Alright, until the next commit, my friend.
+
+:clock730:
+Oh boy, it's 7:30am and there's been a lot of progress. Let's get into it. Aditya will be back in an hour or so to finish up firebase authentication stuff and iron out the flickering issue with the interpretation. On my side, I've been making slow but sure progress. The chrome extension is technically on the chrome store now, but it's not the final version. It can log you in and submit key presses. The key presses stuff was an absolute pain in the ass. The logging in part was saved by a [clutch guide](https://github.com/firebase/quickstart-js/tree/master/auth/chromextension). I've got about three hours left, so I'm hoping I can finish the app and create a quick landing page before the submission deadline.
