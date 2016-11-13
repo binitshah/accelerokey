@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "223824839336",
+    "firebase_url": "https://accelerokey-2fef7.firebaseio.com",
+    "project_id": "accelerokey-2fef7",
+    "storage_bucket": "accelerokey-2fef7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223824839336:android:1be9ec0adfde3203",
+        "android_client_info": {
+          "package_name": "com.evader.rookies.accelerokey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223824839336-ekqlr3nse0o08skh5mttu1ef28c9alor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evader.rookies.accelerokey",
+            "certificate_hash": "BDFF4167B080B621EF82DCAE90517009B1A81BAE"
+          }
+        },
+        {
+          "client_id": "223824839336-mb5m7ek6rtns2pq976ftasv12og9ss6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM1wtSCsyMQyxkDTzIQPirUY6GPo5ME9Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223824839336-mb5m7ek6rtns2pq976ftasv12og9ss6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
