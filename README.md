@@ -11,7 +11,6 @@ This repository is setup into two branches:
 - [x] Start app
 - [x] Capture accelerometer data from the android device
 - [ ] interpret accelerometer data into **events** using defined thresholds
-- [ ] Setup UI to allow user to map **events** to **key presses**
 - [x] Send data to Firebase
 - [ ] Implement users functionality
 - [ ] Upload to Google Play Store
@@ -19,6 +18,7 @@ This repository is setup into two branches:
 ##### Chrome Extension
 - [x] Start extension
 - [ ] Read data from Firebase
+- [ ] Setup UI to allow user to map **events** to **key presses**
 - [ ] Submit **key press** data to browser
 - [ ] Implement users functionality
 - [ ] Upload to Google Chrome App Store
