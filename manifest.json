@@ -10,7 +10,23 @@
 	},
 
 	"permissions": [
+		"debugger",
 		"input",
 		"https://ajax.googleapis.com/"
-	]
+	],
+
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+		"js": ["js/content.js"],
+		"run_at": "document_end"
+		}
+	],
+
+	"background": {
+		"scripts": ["js/jquery.min.js","js/background.js"]
+	}
 }
