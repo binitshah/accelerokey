@@ -1,4 +1,5 @@
 chrome.runtime.onMessage.addListener(function(message,sender,sendResponse){
+    console.log("shit, i'm hit...")
     if(message.key < 130){
         chrome.tabs.query({active: true}, function(tabs) {
             chrome.debugger.attach({ tabId: tabs[0].id }, "1.0");

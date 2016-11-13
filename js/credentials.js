@@ -9,6 +9,15 @@ var config = {
   };
   firebase.initializeApp(config);
 
+  var left = 39;
+  var right = 37;
+  var tforward = 38;
+  var tbackward = 40;
+  var motionschecker;
+  var uid;
+  var started = false;
+
+
 /**
  * initApp handles setting up the Firebase context and registering
  * callbacks for the auth status.
@@ -26,10 +35,14 @@ var config = {
 function initApp() {
   // Listen for auth state changes.
   // [START authstatelistener]
+  left = document.getElementById('left').value;
+  right = document.getElementById('right').value;
+  tforward = document.getElementById('tforward').value;
+  tbackward = document.getElementById('tbackward').value;
+
   firebase.auth().onAuthStateChanged(function(user) {
-    console.log("User: " + user);
+
     if (user) {
-      console.log("Yes User");
       // User is signed in.
       var displayName = user.displayName;
       var email = user.email;
@@ -38,23 +51,21 @@ function initApp() {
       var isAnonymous = user.isAnonymous;
       var uid = user.uid;
       var providerData = user.providerData;
-      // [START_EXCLUDE]
-      document.getElementById('quickstart-button').textContent = 'Sign out';
-      document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-      document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
-      // [END_EXCLUDE]
+      document.getElementById('propic').src = photoURL;
+      document.getElementById('name').textContent = "Welcome " + displayName + "!";
+      document.getElementById('login-screen').style.display = 'none';
+      document.getElementById('main-screen').style.display = 'block';
+      document.getElementById('useriddd').innerHTML = uid;
     } else {
-      console.log("No User");
-      // [START_EXCLUDE]
-      document.getElementById('quickstart-button').textContent = 'Sign-in with Google';
-      document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-      document.getElementById('quickstart-account-details').textContent = 'null';
-      // [END_EXCLUDE]
+      document.getElementById('main-screen').style.display = 'none';
+      document.getElementById('login-screen').style.display = 'block';
     }
-    document.getElementById('quickstart-button').disabled = false;
   });
   // [END authstatelistener]
-  $("#quickstart-button").click(function() {
+  $("#googleloginbtn").click(function() {
+      startSignIn();
+  });
+  $("#googlelogoutbtn").click(function() {
       startSignIn();
   });
 }
@@ -94,7 +105,6 @@ function startAuth(interactive) {
  * Starts the sign-in process.
  */
 function startSignIn() {
-  document.getElementById('quickstart-button').disabled = true;
   console.log("Start Sign In");
   if (firebase.auth().currentUser) {
     console.log("was already signed inFirebase.auth()" + firebase.auth().currentUser);

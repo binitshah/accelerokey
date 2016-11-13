@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Accelerokey</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
         <script src="js/jquery.min.js"></script>
         <script src="js/firebase.js"></script>
@@ -9,39 +11,61 @@
         <script src="js/popup.js"></script>
 	</head>
 	<body>
-        <div id="badge" class="center">
-            <img src="img/icon.png" width="100" class="center" />
-            <p id="title">ACCELEROKEY</p>
-            <button id="fbloginbtn" class="loginBtn loginBtn--facebook">
-              Login with Facebook
-            </button>
-            <button id="googleloginbtn" class="loginBtn loginBtn--google">
-              Login with Google
-            </button>
+        <div id="login-screen">
+            <div id="badge" class="center">
+                <img src="img/icon.png" width="100" class="center" />
+                <p id="title">ACCELEROKEY</p>
+                <!--<button id="fbloginbtn" class="loginBtn loginBtn--facebook">
+                  Login with Facebook
+                </button>-->
+                <button id="googleloginbtn" class="loginBtn loginBtn--google">
+                  Login with Google
+                </button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <p id="description">Accelerokey lets you use your phone's accelerometer to control games in your web browser. To set this up, first login here. Then download the app and login there. When your phone begins to broadcast, I'll automatically pick up on it. Thanks for using our app!</p>
+            <br>
+            <div class="center">
+                <a href=""><img src="img/googleplay.png" width="100" class="center" /></a> <!--TODO-->
+            </div>
         </div>
-        <div class="quickstart-user-details-container">
-            <button id="quickstart-button">Sign-in with Google</button>
-            <p>
-              Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-              <div>Firebase auth <code>currentUser</code> object value:</div>
-              <pre><code id="quickstart-account-details">null</code></pre>
-            </p>
-          </div>
-        <br>
-        <br>
-        <br>
-        <div class="center">
-            <a href=""><img src="img/googleplay.png" width="100" class="center" /></a>
+        <div id="main-screen">
+            <div class="right" style="margin-top: -10px;">
+                <button id="googlelogoutbtn" class="loginBtn loginBtn--google">
+                  Sign out
+                </button>
+            </div>
+            <div id="welcomestuff" class="center" style="margin-top: 10px;">
+                <img id="propic" class="center" width="60" style="border-radius: 60px;" />
+                <h1 id="name"></h1>
+            </div>
+            <div id="offline" class="center">
+                <i class="material-icons center" id="officon" style="text-align: center;">phonelink_erase</i>
+                <div id="nodevices">No devices online</div>
+                <p id="description2">Accelerokey lets you use your phone's accelerometer to control games in your web browser. To set this up, first login here. Then download the app and login there. When your phone begins to broadcast, I'll automatically pick up on it. Thanks for using our app!</p>
+                <div class="center">
+                    <a href=""><img src="img/googleplay.png" width="100" class="center" /></a> <!--TODO-->
+                </div>
+            </div>
+            <div id="online" class="center">
+                <div id="nodevices">ONLINE</div>
+
+                <label for="left">Left</label>
+                <input id="left" name="left" type="text"  value="37" /><br>
+                <label for="right">Right</label>
+                <input id="right" name="right" type="text"  value="39" /><br>
+                <label for="tforward">Tilt Forward</label>
+                <input id="tforward" name="tforward" type="text"  value="40" /><br>
+                <label for="tbackward">Tilt Backward</label>
+                <input id="tbackward"name="tbackward" type="text"  value="38" /><br>
+                <br>
+                <input type="button" id="startpausebtn" class="center" value="Start">
+            </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div><a href="https://github.com/binitshah/accelerokey" target="_blank">Check out the Code</a><div style="float: right;">© 2016 Adityda & Binit</div></div>
+
+        <div class="footer" style="width: 100%;"><a href="https://github.com/binitshah/accelerokey" target="_blank">Check out the Code</a></div>
+        <div class="footer right">© 2016 Adityda & Binit</div>
 	</body>
 </html>

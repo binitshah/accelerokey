@@ -1,59 +1,100 @@
-// Initialize Firebase
-/*var config = {
-    apiKey: "AIzaSyDvpRVbYv2-whPMUp7lv4io49QGyX7kMME",
-    authDomain: "tempacceler.firebaseapp.com",
-    databaseURL: "https://tempacceler.firebaseio.com",
-    storageBucket: "tempacceler.appspot.com",
-    messagingSenderId: "121806623223"
-};
-firebase.initializeApp(config);*/
+
+
+  /*
+  $("#fbloginbtn").click(function() {
+      console.log("fb button message sent");
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {greeting: "up"}, function(response) {
+          console.log(response.farewell);
+        });
+      });
+  });
+
+  $('#googleloginbtn').click(function(){
+      //var provider = new firebase.auth.GoogleAuthProvider();
+      //firebase.auth().signInWithRedirect(provider);
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {greeting: "down"}, function(response) {
+          console.log(response.farewell);
+        });
+      });
+  });
+
+
+
+
+  */
 
 $(function(){
-    $("#fbloginbtn").click(function() {
-        console.log("fb button message sent");
-        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-          chrome.tabs.sendMessage(tabs[0].id, {greeting: "up"}, function(response) {
-            console.log(response.farewell);
-          });
-        });
+
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      chrome.tabs.sendMessage(tabs[0].id, {greeting: "up"}, function(response) {
+        console.log(response.farewell);
+      });
     });
+    setTimeout(function() {
+      uid = document.getElementById('useriddd').innerHTML;
 
-    $('#googleloginbtn').click(function(){
-        //var provider = new firebase.auth.GoogleAuthProvider();
-        //firebase.auth().signInWithRedirect(provider);
-        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-          chrome.tabs.sendMessage(tabs[0].id, {greeting: "down"}, function(response) {
-            console.log(response.farewell);
-          });
-        });
-    });
+      var database = firebase.database();
+      var onlinechecker = firebase.database().ref('users/' + uid + '/online');
+      onlinechecker.on('value', function(snapshot) {
+        var data = snapshot.val()
+        console.log(data);
+        if(data == null){
+          document.getElementById('online').style.display = 'none';
+          document.getElementById('offline').style.display = 'block';
+        }
+        else{
+          if(data){
+            document.getElementById('online').style.display = 'block';
+            document.getElementById('offline').style.display = 'none';
+          }
+          else{
+            document.getElementById('online').style.display = 'none';
+            document.getElementById('offline').style.display = 'block';
+          }
+        }
+      });
 
-    /*firebase.auth().getRedirectResult().then(function(result) {
-      if (result.credential) {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = result.credential.accessToken;
-        console.log("Token: " + token);
-        // ...
-      }
-      // The signed-in user info.
-      var user = result.user;
-    }).catch(function(error) {
-        console.log("error: " + error.message);
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      // The email of the user's account used.
-      var email = error.email;
-      // The firebase.auth.AuthCredential type that was used.
-      var credential = error.credential;
-      // ...
-    });*/
+      $("#startpausebtn").click(function() {
+          if(started){
+            started = false;
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              chrome.tabs.sendMessage(tabs[0].id, {greeting: "up"}, function(response) {
+                console.log(response.farewell);
+              });
+            });
+            document.getElementById('startpausebtn').style.backgroundColor = "#00ff00";
+            document.getElementById('startpausebtn').value = "Start";
+            motionschecker.off();
+          }
+          else{
+            started = true;
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              chrome.tabs.sendMessage(tabs[0].id, {greeting: "up"}, function(response) {
+                console.log(response.farewell);
+              });
+            });
+            document.getElementById('startpausebtn').style.backgroundColor = "#ff0000";
+            document.getElementById('startpausebtn').value = "Pause";
+            left = document.getElementById('left').value;
+            right = document.getElementById('right').value;
+            tforward = document.getElementById('tforward').value;
+            tbackward = document.getElementById('tbackward').value;
+            motionschecker = firebase.database().ref('users/' + uid + '/motions');
+            motionschecker.on('value', function(snapshot) {
+              var data2 = snapshot.val()
+              if(data2 == null){
+                alert("something went terribly wrong");
+              }
+              else{
+                var motions = data2.split(" ");
+                motions.forEach(function(element) {
+                  console.log(element);
+                });
+              }
+            });
+          }
+      });
+    }, 1000);
 });
-
-/*
-chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-  chrome.tabs.sendMessage(tabs[0].id, {greeting: "down"}, function(response) {
-    console.log(response.farewell);
-  });
-});
-*/
