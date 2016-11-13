@@ -1,5 +1,5 @@
 # Accelerokey
-Are you still playing web games with your keyboard? :worried: I bet you wish there were a cooler way than an regular old keyboard! Use Accelerokey to map your phone's accelerometer to your computer's keypad! :relaxed:
+Are you still playing web games with your keyboard? :worried: I bet you wish there were a cooler way than an regular old keyboard! Use Accelerokey to map your phone's accelerometer to your computer's keypad! :smile:
 
 ### Check out the Code
 This repository is setup into two branches:
@@ -13,7 +13,7 @@ This repository is setup into two branches:
 - [ ] Setup UI to allow user to map **events** to **key presses**
 - [ ] Send data to Firebase
 
-##### Android
+##### Chrome Extension
 - [ ] Read data from Firebase
 - [ ] Submit **key press** data to browser
 
