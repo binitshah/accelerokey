@@ -10,9 +10,8 @@
 	},
 
 	"permissions": [
-		"debugger",
-		"input",
-		"https://ajax.googleapis.com/"
+		"identity",
+		"debugger"
 	],
 
 	"content_scripts": [
@@ -27,6 +26,18 @@
 	],
 
 	"background": {
-		"scripts": ["js/jquery.min.js","js/background.js"]
-	}
+		"page": "background.html"
+	},
+
+	"content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+
+	"oauth2": {
+	    "client_id": "803168534221-vj132qg2d3m94rmuge33mbismfea3irh.apps.googleusercontent.com",
+	    "scopes": [
+	      "https://www.googleapis.com/auth/userinfo.email",
+	      "https://www.googleapis.com/auth/userinfo.profile"
+	    ]
+	  },
+
+	  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArPcvjFAFlfodBqszhAFPvOt9QS3hu/vRYi1uKZBw0CUqmXRqD5XqcsUEJsLzq4+0pjD3Eseuyd4ObZEg1vz02LonzCQe+BQxBeel/usEEyAYd5oXeckJC3hzS2KOBNjsm96/24STSRCdi12CjADV+U8O3kWvgxBw+AIoBJfZLEKvrh3yDqJjfX7NtCxep6JwhfjBBo8b0htG8N7Dwzqha6001Fqs8nyQzqzC1PsObmOXnJI7AeKdvKA6gKlapB/iqK7KTAVCGs8EDWkH5jXPdKLd3xADVULvJnqZJd4ITfDo3wwrv5eIPq1U1/FRgraV/LWe7jGjdlcOIuQijGb6vwIDAQAB"
 }

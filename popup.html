@@ -3,8 +3,45 @@
 	<head>
 		<title>Accelerokey</title>
 		<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/credentials.js"></script>
+        <script src="js/popup.js"></script>
 	</head>
 	<body>
-		<div>Welcome to the jungle</div>
+        <div id="badge" class="center">
+            <img src="img/icon.png" width="100" class="center" />
+            <p id="title">ACCELEROKEY</p>
+            <button id="fbloginbtn" class="loginBtn loginBtn--facebook">
+              Login with Facebook
+            </button>
+            <button id="googleloginbtn" class="loginBtn loginBtn--google">
+              Login with Google
+            </button>
+        </div>
+        <div class="quickstart-user-details-container">
+            <button id="quickstart-button">Sign-in with Google</button>
+            <p>
+              Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+              <div>Firebase auth <code>currentUser</code> object value:</div>
+              <pre><code id="quickstart-account-details">null</code></pre>
+            </p>
+          </div>
+        <br>
+        <br>
+        <br>
+        <div class="center">
+            <a href=""><img src="img/googleplay.png" width="100" class="center" /></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div><a href="https://github.com/binitshah/accelerokey" target="_blank">Check out the Code</a><div style="float: right;">© 2016 Adityda & Binit</div></div>
 	</body>
 </html>
