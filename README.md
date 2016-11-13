@@ -17,7 +17,7 @@ This repository is setup into two branches:
 - [ ] Upload to Google Play Store
 
 ##### Chrome Extension
-- [ ] Start extension
+- [x] Start extension
 - [ ] Read data from Firebase
 - [ ] Submit **key press** data to browser
 - [ ] Implement users functionality
