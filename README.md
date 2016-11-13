@@ -12,7 +12,7 @@ This repository is setup into two branches:
 - [x] Capture accelerometer data from the android device
 - [ ] interpret accelerometer data into **events** using defined thresholds
 - [ ] Setup UI to allow user to map **events** to **key presses**
-- [ ] Send data to Firebase
+- [x] Send data to Firebase
 - [ ] Implement users functionality
 - [ ] Upload to Google Play Store
 
@@ -37,3 +37,6 @@ It's 10pm and we're just getting into the hackathon vibe. Hacking started 2 hour
 
 :clock11:
 Alright, it's 11pm and I spend half an hour eating paneer with a friend. Progress is slow but it's happening. In the last half hour, I've created the extension and figured out what chrome API I'll need to submit the keystrokes (hint: chrome.input.ime). Aditya has four of the movements done and has already started implementing the Firebase realtime database. Things are going well.
+
+:clock1230:
+It's 12:30 and we just had insomnia cookies. Aditya realized that we cannot capture the z rotation because of the way that accelerometers work. So it looks like we're only grabbing four events as of now. It's enough for most games anyways. I'm making progress on firing virtual keystrokes as well.
