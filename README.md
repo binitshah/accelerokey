@@ -3,5 +3,5 @@ Are you still playing web games with your keyboard? I bet you wish there were a 
 
 ## Check out the Code
 This repository is setup into two branches:
-1. [**android**](https://github.com/binitshah/accelerokey/tree/android) - contains all the android app code for capturing and interpreting accelerometer data.
-2. [**chrome extension**](https://github.com/binitshah/accelerokey/tree/chrome-extension) - contains all the chrome extension code for reading and submitting keypress data to the browser.
+- [**android**](https://github.com/binitshah/accelerokey/tree/android) - contains all the android app code for capturing and interpreting accelerometer data.
+- [**chrome-extension**](https://github.com/binitshah/accelerokey/tree/chrome-extension) - contains all the chrome extension code for reading and submitting keypress data to the browser.
