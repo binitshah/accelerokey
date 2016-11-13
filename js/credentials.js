@@ -49,17 +49,81 @@ function initApp() {
       var emailVerified = user.emailVerified;
       var photoURL = user.photoURL;
       var isAnonymous = user.isAnonymous;
-      var uid = user.uid;
+      uid = user.uid;
+      console.log(uid);
       var providerData = user.providerData;
       document.getElementById('propic').src = photoURL;
       document.getElementById('name').textContent = "Welcome " + displayName + "!";
       document.getElementById('login-screen').style.display = 'none';
       document.getElementById('main-screen').style.display = 'block';
-      document.getElementById('useriddd').innerHTML = uid;
+
+      var database = firebase.database();
+      var onlinechecker = firebase.database().ref('users/' + uid + '/online');
+      onlinechecker.on('value', function(snapshot) {
+        var data = snapshot.val()
+        console.log(data);
+        if(data == null){
+          document.getElementById('online').style.display = 'none';
+          document.getElementById('offline').style.display = 'block';
+        }
+        else{
+          if(data){
+            document.getElementById('online').style.display = 'block';
+            document.getElementById('offline').style.display = 'none';
+          }
+          else{
+            document.getElementById('online').style.display = 'none';
+            document.getElementById('offline').style.display = 'block';
+          }
+        }
+      });
     } else {
       document.getElementById('main-screen').style.display = 'none';
       document.getElementById('login-screen').style.display = 'block';
     }
+  });
+  $("#startpausebtn").click(function() {
+      if(started){
+        started = false;
+        document.getElementById('startpausebtn').style.backgroundColor = "#00ff00";
+        document.getElementById('startpausebtn').value = "Start";
+        motionschecker.off();
+      }
+      else{
+        started = true;
+        document.getElementById('startpausebtn').style.backgroundColor = "#ff0000";
+        document.getElementById('startpausebtn').value = "Pause";
+        left = document.getElementById('left').value;
+        right = document.getElementById('right').value;
+        tforward = document.getElementById('tforward').value;
+        tbackward = document.getElementById('tbackward').value;
+        document.body.style.width = "1px";
+        document.body.style.height = "1px";
+        motionschecker = firebase.database().ref('users/' + uid + '/motions');
+        motionschecker.on('value', function(snapshot) {
+          var data2 = snapshot.val()
+          if(data2 == null){
+            alert("something went terribly wrong");
+          }
+          else{
+            var motions = data2.split(" ");
+            motions.forEach(function(element) {
+              if(element == "right"){
+                chrome.runtime.sendMessage({ key: 39 });
+              }
+              else if(element == "left"){
+                chrome.runtime.sendMessage({ key: 37 });
+              }
+              else if(element == "tforward"){
+                chrome.runtime.sendMessage({ key: 38 });
+              }
+              else if(element == "tbackward"){
+                chrome.runtime.sendMessage({ key: 40 });
+              }
+            });
+          }
+        });
+      }
   });
   // [END authstatelistener]
   $("#googleloginbtn").click(function() {
@@ -94,7 +158,6 @@ function startAuth(interactive) {
           });
         }
       });
-      console.log("you're logged in finally, i think");
     } else {
       console.error('The OAuth Token was null');
     }
