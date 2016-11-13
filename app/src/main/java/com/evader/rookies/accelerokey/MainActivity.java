@@ -62,8 +62,8 @@ public class MainActivity extends Activity implements SensorEventListener {
         Log.d("ACC", "OnSenorChanged: " + v.getText());
         if (counter == 0) {
             firebaseDatabase = FirebaseDatabase.getInstance();
-            DatabaseReference databaseReference = firebaseDatabase.getReference("movement");
-            databaseReference.setValue(movement);
+            DatabaseReference databaseReference = firebaseDatabase.getReference("users");
+            databaseReference.child("Bdq7AsctoSa3A6lvv2N7MviO3UU2").child("motions").setValue(movement);
         }
 
     }
