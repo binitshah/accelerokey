@@ -3,57 +3,75 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.6.1_b76fa585b70c3d1f54a3383188127eb848919c98.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_5c6502c450cbbc7f9e11910db9227b8221ada121.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.6.1_591c37a6037ffcadc6547ed8b1d5d5eb6b2682db.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.6.1_3bbc5bb6304b502a53419bdb12bf5f4b15d37f15.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.0.0_81cd3eb15e93f6cb267c6ffb8e9aace83c31bed4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_0a09ce22198c74710576c6351dd575b2bc4f10d5.jar" />
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_da735e251a52a2939960caf2a4ab1e928e923ac0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.0.0_e92669974901cc07e97fc5e13c40fd42a33d32c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_b653e0ed1cdb9ac41829b1525146d7ccd532fa98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.6.1_820537ab0325504e396a4d4424c517137a0cd2d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_d367bfa1239d079498748c51fddc98e055f666ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.6.1_dec3f3737596548c07b90324d8a7930c01dc0e85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.6.1_2ce7a8c1d9e862aadbf7467c65ae3a8ea93c62b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.0.0_bbf151c9031bc1dc5f76353274a29a66f1c1f362.jar" />
     </item>
     <item
         is-multidex="false"
@@ -62,88 +80,70 @@
         optimize="true"
         revision="24.0.2"
         sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_f94b08a4df80c80c00055c911dc011d5f742b1ad.jar" />
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_f94b08a4df80c80c00055c911dc011d5f742b1ad.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.6.1_8465641398053fe71ed7c79f4f7c68b6bef3f5b0.jar" />
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_ae6399b467b1df664a407eb5b684dc955f78de84.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_0c9824c3db44df047f58eb48a491b3dc3e9c254c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_ee732c7b9ca2a3e310936015b8b50f4959ddfcaa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_64f77063c4146450c53f366bf4f14329372b1768.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.6.1_703d4e9714657eb1e2ba28bf8663d8f896f7f56d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_ca172faecb561ce1322927b0c88e8bb339b98601.jar" />
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_fd607beb1f63234f608f8f7e3b77ba52932bfc8f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.6.1_19ac98fe9ecdfaceeac7a0158782c7f0bfb554bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_d47501a64909f3f781f13de4d3e6fd92df7d39fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.6.1_c8b7f780e6c20a0b70a8bffce4ba6d1fc15f1728.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_14d23afd98d87c01f28ae9052e30ec93110e3c1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="ac8365c87591065db07f7bac8551504504832cd4">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.6.1_2eed897c3a0841eeb19e08852067eea88f51b8be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_af28c20c18074226bc23d88763ca34121b1ec886.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
-        <dex dex="C:\Users\bshah\Google Drive\Projects\accelerokey\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.0.0_adc49f3144a11952b538470cea70b0ceb60673cd.jar" />
+        <dex dex="C:\Users\bshah\Desktop\accelerokey\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.6.1_3b45517708e0e9885f8f6891d9626fe7f7a5ee0e.jar" />
     </item>
 
 </items>

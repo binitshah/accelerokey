@@ -32,12 +32,15 @@ public class MainActivity extends Activity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         relativeLayout = (RelativeLayout)(findViewById(R.id.activity_main));
+
         movements[0] = new Movements("NOMOVEMENTS", true);
         movements[1] = new Movements("LEFT", false);
         movements[2] = new Movements("RIGHT", false);
         movements[3] = new Movements("TILTAWAY", false);
         movements[4] = new Movements("TILTTOWARDS", false);
+
         sensorManager = (SensorManager) this.getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this,sensor,SensorManager.SENSOR_DELAY_UI);
